@@ -1,6 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
+import { ModeToggle } from "./ModeToggle";
+import { Button } from "./ui/button";
 
 export function Header() {
   return (
@@ -10,7 +12,10 @@ export function Header() {
       </div>
       <div>Search</div>
       <div className="flex items-center gap-3">
-        <ShoppingCart />
+        <ModeToggle />
+        <Button variant="ghost" size="icon">
+          <ShoppingCart />
+        </Button>
         <Avatar>
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
