@@ -1,5 +1,4 @@
 export interface IPlace {
-  id: number;
   name: string;
   slug: string;
   imageUrl?: string;

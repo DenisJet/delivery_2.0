@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <Providers>
           <Header />
-          <Separator className="my-1" />
+          <Separator className="mt-1 mb-3" />
           <main className="max-w-7xl mx-auto px-2">{children}</main>
         </Providers>
       </body>
